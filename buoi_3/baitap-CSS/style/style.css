@@ -230,3 +230,66 @@ body {
     
 }
 
+/*! Footer */
+
+.footer{
+    height: 300px;
+    margin: auto;
+    background-color: #370665;
+    color: #f6f6f6;
+    padding: 30px;
+}
+
+.column{
+    width: 280px;
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+}
+
+
+.column h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contactUs{
+    margin-bottom: 8px;
+}
+
+.column .contactUs i{
+    display: inline;
+}
+
+.column p, .column a{
+    font-size: 13px;
+    display: inline;
+}
+
+.column ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+.column ul li{
+    margin-bottom: 10px;
+}
+
+.column ul li a{
+    text-decoration: none;
+    color: #f6f6f6;
+}
+
+.copyright hr{
+    margin: 0;
+}
+
+.copyright p{
+    margin: 20px 0;
+}
+
+.copyright span{
+    color: #ad9e65;
+}
