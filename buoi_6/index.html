@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- Slick Theme CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
@@ -73,12 +78,14 @@
         <div class="sa--content">
             <div class="content--right">
                 <div class="title">
-                    <p>We are The Best</p>
-                    <h2>Freelance Product Designer Running</h2>
+                    <p class="animate__animated animate__fadeInUp animate__delay-0s">We are The Best</p>
+                    <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Freelance Product Designer Running
+                    </h2>
                 </div>
                 <div class="article">
-                    <p>We develop the relationships that underpin the next phase in your <br> organisation’s growth</p>
-                    <ul>
+                    <p class="animate__animated animate__fadeInUp animate__delay-2s">We develop the relationships that
+                        underpin the next phase in your <br> organisation’s growth</p>
+                    <ul class="animate__animated animate__fadeInUp animate__delay-3s">
                         <li>
                             <i class="fa-regular fa-circle-check"></i>
                             <span>Master's degree in designing</span>
@@ -88,10 +95,11 @@
                             <span>Outstanding mobile design</span>
                         </li>
                     </ul>
-                    <button>get started</button>
+                    <button class="animate__animated animate__fadeInUp animate__delay-4s">get started</button>
                 </div>
             </div>
-            <div class="content--left"> <img src="img/pic3_1.png" alt=""></div>
+            <div class="content--left animate__animated animate__fadeInUp animate__delay-3s"> <img src="img/pic3_1.png"
+                    alt=""></div>
         </div>
     </section>
     <section id="service" class="container">
@@ -122,10 +130,10 @@
     </section>
     <section id="aboutUs" class="container">
         <div class="about--content">
-            <div class="aboutus--left">
+            <div class="aboutus--left wow animate__animated animate__fadeInLeft animated anima-duration-2s ani_delay-0_2s">
                 <img src="img/pic1.jpg" alt="">
             </div>
-            <div class="aboutus--right">
+            <div class="aboutus--right wow animate__animated animate__fadeInRight animated nima-duration-2s ani_delay-0_2s">
                 <div class="title">
                     <p>About Us</p>
                     <h2>Build Your <br> Business Website <br> Better</h2>
@@ -184,13 +192,14 @@
     <section id="features">
         <div class="container">
             <div class="features--content">
-                <div class="features--left">
-                    <div class="title">
+                <div class="features--left wow " >
+                    <div class="title animate__animated animate__fadeInLeft anima-duration-2s">
                         <p>Our Features</p>
                         <h2>Behind The Story <br>Of Samar Agency</h2>
                     </div>
                     <div class="features-group">
-                        <div class="group--item">
+                        <div
+                            class="group--item animate__animated animate__fadeInRight anima-duration-2s ani_delay-0_4s" >
                             <i class="fa-regular fa-user"></i>
                             <div class="item--content">
                                 <h3>Idea Analysis Gathering</h3>
@@ -198,7 +207,8 @@
                                     consequat augue.</p>
                             </div>
                         </div>
-                        <div class="group--item item--center">
+                        <div
+                            class="group--item item--center animate__animated animate__fadeInRight anima-duration-2s ani_delay-0_6s">
                             <i class="fa-solid fa-code"></i>
                             <div class="item--content">
                                 <h3>Design & Developing</h3>
@@ -206,7 +216,8 @@
                                     consequat augue.</p>
                             </div>
                         </div>
-                        <div class="group--item">
+                        <div
+                            class="group--item animate__animated animate__fadeInRight  anima-duration-2s ani_delay-0_8s">
                             <i class="fa-solid fa-jet-fighter-up"></i>
                             <div class="item--content">
                                 <h3>
@@ -436,8 +447,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
     <script>
         $(document).ready(function () {
             $('.carousel').slick({
@@ -449,6 +458,19 @@
                 slidesToScroll: 1,
             });
         });
+    </script>
+
+    <!-- run number -->
+
+    <script>
+        $('.counter').countUp();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
     </script>
 
 </body>
