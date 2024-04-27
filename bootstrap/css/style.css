@@ -56,6 +56,19 @@ body {
     transition: all .5s;
 }
 
+.bt_default{
+    font-weight: 600;
+    border: 1px solid #ea6868;
+    background-color: #ea6868;
+    margin-top: 50px;
+}
+
+.bt_default:hover{
+    background-color: transparent;
+    border: 1px solid #ea6868;
+    color: #ea6868;
+}
+
 /* HEADER */
 header {
     position: absolute;
@@ -120,20 +133,9 @@ header {
 .carousel-caption p {
     font-size: 25px;
     font-weight: 400;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
-.bt_contact{
-    background-color: #ea6868;
-    border: 2px solid #ea6868;
-    font-weight: 500;
-    margin-bottom: 100px;
-}
-
-.bt_contact:hover{
-    color: #ea6868;
-    background-color: transparent;
-}
 
 .carousel-control-prev, .carousel-control-next{
     position: absolute;
@@ -165,6 +167,10 @@ header {
 
 .carousel-control-next:hover{
     transform: translateX(30px);
+}
+
+.bt_baner{
+    margin-bottom: 100px;
 }
 
 /* SERVICE */
@@ -297,18 +303,7 @@ header {
     color: rgb(198, 202, 206);
 }
 
-.bt_view{
-    font-weight: 800;
-    border: 1px solid #ea6868;
-    background-color: #ea6868;
-    margin-top: 50px;
-}
 
-.bt_view:hover {
-    background-color: transparent;
-    border: 1px solid #ea6868;
-    color: #ea6868;
-}
 
 /* ABOUT */
 
@@ -388,6 +383,103 @@ header {
     font-size: 18px;
     line-height: 30px;
 }
+
+/* NEW */
+
+.new_wrapper{
+    position: relative;
+}
+
+.new_img img{
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.new_card{
+    position: relative;
+    transform: translateY(0px);
+    transition: all .5s;
+}
+
+.new_card:hover{
+    transform: translateY(-10px);
+}
+
+.new_card::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 89%;
+    height: 85%;
+    margin-left: 12px;
+    display: block;
+    z-index: 1;
+    content: "";
+    background: linear-gradient(to bottom, rgba(15, 15, 15, 0), rgba(15, 15, 15, 0.75) 100%);
+    transition: opacity 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.new_card::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 89%;
+    height: 85%;
+    margin-left: 12px;
+    display: block;
+    z-index: 1;
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ea6868 100%);
+    cursor: pointer;
+    opacity: 0;
+    border-radius: 10px;
+    transition: all .5s;
+    transform: translateY(0px);
+}
+
+.new_card:hover::after{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.heading{
+    width: 90%;
+    padding: 30px;
+    position: absolute;
+    bottom: 35px;
+    text-align: left;
+    color: white; 
+    z-index: 2;   
+}
+
+.new_card:hover .heading{
+    transform: translateY(-50px);
+}
+
+.hover button{
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ea6868;
+    border: 1px solid white;
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    left: 30px;
+    opacity: 0;
+}
+
+.new_card:hover .hover button{
+    color: white;
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+/* .new_card:hover:hover  button{
+    background-color: #b23636;
+} */
 
 
 
