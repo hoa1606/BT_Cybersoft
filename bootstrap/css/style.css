@@ -510,5 +510,26 @@ header {
     border: none;
 }
 
+/* FOOTER */
+.footer_top h2{
+    color: white;
+    font-weight: 900;
+}
+
+.footer_top button{
+    width: 300px;
+    height: 80px;
+    background-color: transparent;
+    border: 2px solid #fff3;
+    color: white;
+    border-radius: 40px;
+    font-size: larger;
+}
+
+.footer_top button:hover{
+    background-color: #fd4766;
+    border: 2px solid #fd4766;
+}
+
 
 
