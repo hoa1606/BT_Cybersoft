@@ -30,7 +30,7 @@ body {
     line-height: 18px;
     font-size: 16px;
     border-radius: 4px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     color: #ea6868;
     text-align: center;
 }
@@ -309,6 +309,87 @@ header {
     border: 1px solid #ea6868;
     color: #ea6868;
 }
+
+/* ABOUT */
+
+.about_left{
+    width: 40%;
+}
+
+.about_left img{
+    width: 95%;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+
+.about_right{
+    margin-left: 50px;
+}
+
+.about_right .title{
+    text-align: left;
+}
+
+.about_right .title h2{
+    margin-bottom: 35px;
+}
+
+.nav-tabs{
+    border: 1px solid #ea6868;
+    border-radius: 25px ;
+}
+
+.nav-item button{
+    width: 150px;
+    color: black;
+    font-weight: 600;
+}
+
+.nav_tab .nav-item .nav-link{
+    border: none;
+}
+
+.nav_tab .nav-item .nav-link:hover{
+    border-color: #ea6868;
+    color: black;
+}
+
+.nav_tab .nav-item .nav-link:focus{
+    color: black;
+}
+
+.nav_tab .nav-item .nav-link.active{
+    border-radius: 25px ;
+    background-color: #ea6868;
+}
+
+.tab-content .tab-pane{
+    margin-top: 20px;
+}
+
+.nav_conten h4{
+    color: black;
+    font-weight: 600;
+}
+
+.tab-content .tab-pane li{
+    list-style: nome;
+}
+
+.nav_conten i{
+    font-size: 20px;
+    line-height: 40px;
+    color: #ea6868;
+}
+
+.tab-content p {
+    font-weight: 300;
+    color: #717173;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
 
 
 
