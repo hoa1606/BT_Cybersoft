@@ -170,7 +170,7 @@ header {
 
 /* SERVICE */
 
-.card{
+.service_card{
     width: 30%;
     margin: 15px;
     padding: 40px 30px;
@@ -179,7 +179,7 @@ header {
     transition: all .5s;
 }
 
-.card:hover{
+.service_card:hover{
     transform: translateY(-10px);
 }
 
