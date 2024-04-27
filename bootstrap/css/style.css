@@ -128,7 +128,6 @@ header {
     border: 2px solid #ea6868;
     font-weight: 500;
     margin-bottom: 100px;
-
 }
 
 .bt_contact:hover{
@@ -197,3 +196,119 @@ header {
 .content p{
     font-size: 20px;
 }
+
+/* PORTFOLIO */
+
+
+
+.portfolio_wrapper{
+    position: relative;
+}
+
+.port_img img{
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.portfolio_card{
+    position: relative;
+    transform: translateY(0px);
+    transition: all .5s;
+}
+
+.portfolio_card:hover{
+    transform: translateY(-10px);
+}
+
+.portfolio_card::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 88%;
+    height: 85%;
+    margin-left: 12px;
+    display: block;
+    z-index: 1;
+    content: "";
+    background: linear-gradient(to bottom, rgba(15, 15, 15, 0), rgba(15, 15, 15, 0.75) 100%);
+    transition: opacity 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.portfolio_card::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 89%;
+    height: 85%;
+    margin-left: 12px;
+    display: block;
+    z-index: 1;
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ea6868 100%);
+    cursor: pointer;
+    opacity: 0;
+    border-radius: 10px;
+    transition: all .5s;
+    transform: translateY(0px);
+}
+
+.portfolio_card:hover::after{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.heading{
+    width: 90%;
+    position: absolute;
+    bottom: 35px;
+    text-align: center;
+    color: white; 
+    z-index: 2;   
+}
+
+.portfolio_card:hover .heading{
+    transform: translateY(-50px);
+}
+
+.heading p{
+    color: rgb(148, 143, 143);
+}
+
+.heading h4{
+    font-weight: 600;
+}
+
+.hover{
+    width: 90%;
+    position: absolute;
+    color: transparent; 
+    text-align: center;
+    z-index: 2;
+    bottom: 20px;
+    line-height: 20px;
+    
+}
+
+.portfolio_card:hover .hover{
+    color: white;
+    transform: translateY(-10px);
+    color: rgb(198, 202, 206);
+}
+
+.bt_view{
+    font-weight: 800;
+    border: 1px solid #ea6868;
+    background-color: #ea6868;
+    margin-top: 50px;
+}
+
+.bt_view:hover {
+    background-color: transparent;
+    border: 1px solid #ea6868;
+    color: #ea6868;
+}
+
+
+
