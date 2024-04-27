@@ -1,11 +1,12 @@
 /*! Global */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     color: #636363;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -14,7 +15,7 @@ html, body {
 
 
 
-.title p{
+.title p {
     font-weight: 600;
     letter-spacing: 0.5px;
     line-height: 18px;
@@ -23,42 +24,127 @@ html, body {
     margin-bottom: 12px;
 }
 
-.title h2{
+.title h2 {
     font-size: 50px;
     font-weight: 600;
     line-height: 62px;
     margin-bottom: 20px;
 }
 
-/* HEADER */
-.logo img{
-    width: 65%;  
-} 
-
-.nav{
-    font-weight: 600;
-    color: white;
-}
-
-.nav-item a{
+.bt {
+    padding: 15px 40px;
     color: white;
     transition: all .5s;
 }
 
-.nav-item:hover a{
+/* HEADER */
+header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.logo img {
+    width: 65%;
+}
+
+.nav {
+    font-weight: 600;
+    color: white;
+
+}
+
+.nav-item a {
+    color: white;
+    transition: all .5s;
+}
+
+.nav-item:hover a {
     color: #ea6868;
 }
 
 .bt_buyNow{
-    width: 170px;
-    height: 50px;
     font-weight: 800;
-    color: white;
+    margin-right: 100px;
     border: 1px solid white;
-    transition: all .5s;
+    background-color: transparent;
 }
 
-.bt_buyNow:hover{
+.bt_buyNow:hover {
     background-color: #ea6868;
     border: 1px solid #ea6868;
 }
+
+/* BANER */
+
+
+#baner .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 30px 10px;
+    border: 2px solid transparent;
+}
+
+#baner .carousel-indicators .active{
+    border: 2px solid #ea6868;
+    background-color: transparent;
+   
+}
+
+.carousel-caption h2 {
+    font-size: 100px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.bt_contact{
+    background-color: #ea6868;
+    border: 2px solid #ea6868;
+    font-weight: 500;
+    margin-bottom: 100px;
+
+}
+
+.bt_contact:hover{
+    color: #ea6868;
+    background-color: transparent;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    position: absolute;
+    top: 50%;
+    margin-left: 100px;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ea6868;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 25px;
+    transition: all .5s;
+}
+
+#baner .carousel-control-next{
+    margin-right: 100px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    background-color: #ea6868;
+    color: white;
+    border: 1px solid #ea6868;
+}
+
+.carousel-control-prev:hover{
+    transform: translateX(-30px);
+}    
+
+.carousel-control-next:hover{
+    transform: translateX(30px);
+} 
