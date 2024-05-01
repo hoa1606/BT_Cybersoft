@@ -531,5 +531,50 @@ header {
     border: 2px solid #fd4766;
 }
 
+.footer_center{
+    height: 1px;
+    background-color: rgb(89, 84, 84);
+    margin: 50px 0;
+}
 
+.footer_bottom img{
+   transform: scale(0.5);
+   margin-left: -70px;
+}
+
+.footer_wrapper p{
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.footer_wrapper ul{
+    list-style: none;
+
+}
+
+.footer_wrapper h4{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer_wrapper li{
+    margin-left: -30px;
+}
+
+.footer_wrapper li a{
+    color: rgb(100, 94, 94);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 45px;
+    
+}
+
+.footer_wrapper li:hover a{
+    color: #fd4766;
+}
+
+.footer_icon li{
+    display: inline;
+
+}
 
