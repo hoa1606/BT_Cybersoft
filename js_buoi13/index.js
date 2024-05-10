@@ -38,5 +38,5 @@ function bai5(){
     var hangChuc = (so-hangDonVi)/10;
     var tong = hangDonVi+hangChuc;
 
-    kp.innerHTML = "Tông của số " + so + " là: " + tong;
+    kp.innerHTML = "Tông của số " + so + " KOlà: " + tong;
 }
