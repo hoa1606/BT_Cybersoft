@@ -1,0 +1,22 @@
+*{
+    margin: 0px; 
+    box-sizing: border-box; 
+    margin: auto;
+    width: 80%;
+}
+
+/* bai 1: */
+.tab_item_b1{
+    display: flex;
+    padding: 15px
+}
+
+
+.tab_conten_b1{
+    display: none;
+    padding: 15px;
+    border: 1px solid #000;
+}
+.tab_conten_b1.active{
+    display: block;
+}
