@@ -20,3 +20,36 @@
 .tab_conten_b1.active{
     display: block;
 }
+
+/* bai 2: */
+
+/* bai 3: */ 
+.tab_b3{
+    display: flex;
+    margin-left: 140px;
+}
+
+.tab_b3_bt{
+    width: 100px;
+    height: 30px;
+    margin: 0px;
+    background-color: #fff;
+    border: none;
+}
+
+.tab_b3_bt.active{
+    border: 1px #000 solid;
+    border-bottom: 1px #fff solid;
+}
+
+.content_b3{
+    border-top: 1px #000 solid;
+}
+
+.content_b3_1{
+    display: none;
+}
+
+.content_b3_1.active{
+    display: block;
+}
