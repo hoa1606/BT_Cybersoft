@@ -81,5 +81,28 @@ b3_bt3.onclick = function(){
     b3_content2.classList.remove("active");
 
     b3_bt1.classLis.remove("active");
-    b3_content1.classList.remove("active")
+    b3_content1.classList.remove("active");
 }
+
+// bai 4:
+let b4_bt_modal = document.getElementById("b4-bt-modal");
+let b4_header_close = document.getElementById("b4-bt-header-close");
+let b4_footer_close = document.getElementById("b4-bt-footer-close");
+let b4_footer_save = document.getElementById("b4-bt-footer-Save");
+let b4_content = document.getElementById("content");
+let b4_dialog = document.getElementById("dialog");
+
+b4_bt_modal.onclick = function(){
+    b4_content.className += " active";
+    b4_dialog.className += " active";
+}
+
+let close = function(){
+    b4_content.classList.remove("active");
+    b4_dialog.classList.remove("active");   
+}
+
+b4_header_close.onclick = close;
+b4_footer_close.onclick = close;
+b4_footer_save.onclick = close;
+
