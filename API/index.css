@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+
+    background-color: aqua;
+
+    display: flex;
+    justify-content: center
+
+}
+
+.form{
+    width: 500px;
+    border: 1px black solid;
+
+    h1{
+        text-align: center;
+    }
+
+    p{
+        margin: 0px;
+    }
+
+    .ip_group{
+        padding: 10px;
+    }
+
+    .bt{
+        margin-right: 20px;
+    }
+}
