@@ -3,6 +3,7 @@ import { Header } from "./header";
 import { Section } from "./section";
 import { Footer } from "./footer";
 
+
 function App() {
   return (
     <>
