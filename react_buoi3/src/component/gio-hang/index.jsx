@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-export function GioHang({ listSanPham }) {
+export function GioHang({ listSanPham, onDelete, onTang, onGiam}) {
 
   useEffect(()=> {
     console.log("55555512");
@@ -31,13 +31,13 @@ export function GioHang({ listSanPham }) {
                   <td>{i.name}</td>
                   <td>{i.price}</td>
                   <td>
-                    <button className="btn btn-success">-</button>
+                    <button onClick={() => {onGiam(i.id)}} className="btn btn-success">-</button>
                     <span>{i.amount}</span>
-                    <button className="btn btn-success">+</button>
+                    <button onClick={() => {onTang(i.id)}} className="btn btn-success">+</button>
                   </td>
                   <td>{i.amount * i.price}</td>
                   <td>
-                    <button className="btn btn-danger">Xóa</button>
+                    <button onClick={() => onDelete(i.id)} className="btn btn-danger">Xóa</button>
                   </td>
                 </tr>
               );
